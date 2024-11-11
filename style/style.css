@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+nav a {
+    color: #000;
+    font-size: 1rem;
+    padding: 0.1rem;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 16px
+}
+
+.profile-picture {
+    transform: scale(0.95);
+    width: 500px;
+    height: 500px;
+    border: 1px solid #4e4953;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.profile-picture:hover {
+    transform: scale(0.9555);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
