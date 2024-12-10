@@ -14,7 +14,7 @@
 }
 
 nav a {
-    color: #000;
+    color: #555;
     font-size: 1rem;
     padding: 0.1rem;
 }
@@ -39,4 +39,18 @@ body {
 .profile-picture:hover {
     transform: scale(0.9555);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+    top: 1200px;
+    background-color: #f1eb9c;
+    font-size: 20px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
 }
