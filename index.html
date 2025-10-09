@@ -1,37 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ValentinMENDIss's Personal Wepage :3</title>
-    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <title>MENDIss Webpage</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-    <div class="logo">My Website</div>
-    <div class="nav-items"></div>
-    <a href="index.html">Home</a>
-    <a href="about/about.html">About</a>
-    <a href="contact/contact.html">Contact</a>
-    </nav>
-
-    <section class="main-body">
-        <div class="main-body-container">
-            <div class="column-left">
-            <br>
-            <h1>Welcome to ValentinMENDIss Website</h1>
-            <p>Navigate through navigation bar to learn more about this website and creator :3</p>
-            <br>
-            <hr>
+    <div class ="main_container">
+        <div class="topBar">
+            <p id="myName">MENDIss</p>
+            <a href="about/about.html">About</a>
+            <a href="blogs/blogs.html">Blogs</a>
+            <a href="projects/projects.html">Projects</a>
+            <a href="photography/photography.html">Photography</a>
         </div>
-        <div class="profile-picture">
-            <img src="images/sad boy (made myself no srisovano )).png" alt="illustration" class="hero-image" style="border-radius: 10px;">
+    
+        <div class="mainImageContainer">
+            <img src="images/main_background.jpg" alt="Background Image">
         </div>
-        <div class="bottom-text">
-            <p>This Page is heavily under construction!!!</p>
+    
+        <div class="myInfoContainer zoomable">
+            <h1>Who am I?</h1>
+            <p>I'm Valentin ( ValentinMENDIss ), a passionate programmer and tech enthusiast. I myself am very interested but my interest is not limited to Linux, BSD, servers, programming, as well as Electronics (microcontrollers, etc...).</p>
         </div>
+    
+        <div class="recentProjectsContainer zoomable">
+            <h2>My most recent Projects & Blogs</h2>
+            <p>Here are some of my most recent projects....</p>
+            <button>most recent Blog</button>
+            <button>most recent Project</button>
+        </div>
+    
+        <div class="recentPhotosContainer zoomable">
+            <h2>My most recent Photos</h2>
+            <p>Here are some of my most recent photos...</p>
+            <button>most recent Photo</button>
+        </div>
+    
     </div>
-    </section>
-
 </body>
+
 </html>
+
+
+
+<!--
+<div class="container">
+    <h1>Weather Web-App</h1>
+    <div class="searchContainer">
+        <input
+            class="inputField"
+            id="cityField"
+            placeholder="Enter City Name..."
+            type="text"
+        />
+        <button id="searchBtn">Search</button>
+    </div>
+    <div id="weatherContainer">
+        <h2 id="cityName"></h2>
+        <p id="temperature"></p>
+        <p id="condition"></p>
+        <p id="windSpeed"></p>
+    </div>
+    <p id="errorMessage"></p>
+</div>
+<script src="script.js"></script>
+-->
