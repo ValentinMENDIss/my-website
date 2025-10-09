@@ -16,6 +16,24 @@
     to {zoom: 100%;}
 }
 
+@media screen and (max-width: 800px) {
+    .topBar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow: scroll;
+        gap: 10px;
+    }
+    .topBar a {
+        text-decoration-line: underline;
+        text-decoration-color: greenyellow;
+        text-decoration-style: solid;
+        text-decoration-thickness: 2.5px;
+        
+        color: black;
+    }
+}
+
 
 * {
     font-family: 'Poppins';
@@ -64,19 +82,20 @@ button:not(:hover) {
     animation-fill-mode: forwards;
 }
 
-
-.topBar {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    font-size: 1.25rem;
-    text-decoration: none;
-    justify-content: center;
-    background-color: rgb(246, 247, 231);
-}
-.topBar a {
-    text-decoration: none;
-    color: black;
+@media screen and (min-width: 800px) {
+    .topBar {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        font-size: 1.25rem;
+        text-decoration: none;
+        justify-content: center;
+        background-color: rgb(246, 247, 231);
+    }
+    .topBar a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .topBar a:hover {
