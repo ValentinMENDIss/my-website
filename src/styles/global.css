@@ -1,0 +1,52 @@
+:root {
+    --background: #1A181A;
+    --background2: #7D553C;
+    --foreground: #FFFFFF;
+    --accent: #E68C3D;
+    --terminal-font-color: #283127;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--background);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: var(--foreground);
+}
+
+.content {
+    padding: 0 2rem;
+}
+
+.nav-links {
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--background2);
+}
+
+.nav-links a {
+    padding: 0 2rem;
+    color: var(--foreground);
+    text-decoration: none;
+}
+
+.terminal-text {
+    color: var(--terminal-font-color);
+}
+
+.ascii-art {
+    color: var(--accent);
+}
+
+.terminal-text {
+    font-size: 1rem;
+}
+
+#terminal-text-about-me {
+    font-size: 3rem;
+}
