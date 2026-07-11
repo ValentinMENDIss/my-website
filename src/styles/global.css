@@ -47,11 +47,7 @@ p {
 }
 
 .terminal-text {
-    color: var(--terminal-font-color);
-    line-height: 0;
     font-size: 1rem;
-}
-
-#terminal-text-about-me {
-    font-size: 3rem;
+    line-height: 0;
+    color: var(--terminal-font-color);
 }
