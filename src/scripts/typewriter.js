@@ -1,18 +1,4 @@
-let asciiArt = String.raw ` 
-__        __  __     ____
-\ \      / / / /__  / / /___
- \ \    / /_/ / _ \/ / / __ \ 
- / /   / __  /  __/ / / /_/ / 
-/_/   /_/ /_/\___/_/_/\____( )
-		           |/
- _       __           __    ____
-| |     / /___  _____/ /___/ / /
-| | /| / / __ \/ ___/ / __  / / 
-| |/ |/ / /_/ / /  / / /_/ /_/  
-|__/|__/\____/_/  /_/\__,_(_)
-`; /* I use String.raw, since backslash(\) without it will be automatically parsed as an escape character, because of which the ASCII drawing will be drawn without '\', as they will bne not valid operations */
-
-let asciiArtList = [
+let asciiArt = [
 String.raw` 
 __        __  __     ____
 \ \      / / / /__  / / /___
@@ -100,7 +86,7 @@ String.raw`
 
 const el = document.getElementById('typewriter');
 let i = 0;
-let listId = getRandomInt(asciiArtList.length - 1)
+let listId = getRandomInt(asciiArt.length - 1)
 
 
 function getRandomInt(max) {
@@ -108,7 +94,7 @@ function getRandomInt(max) {
 }
 
 function type() {
-    let chosenArt = asciiArtList[listId]
+    let chosenArt = asciiArt[listId]
     if (i < chosenArt.length) {
         el.textContent += chosenArt[i];
         i++;
