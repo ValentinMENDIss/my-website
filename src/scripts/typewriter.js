@@ -86,21 +86,27 @@ String.raw`
 
 const el = document.getElementById('typewriter');
 let i = 0;
-let listId = getRandomInt(asciiArt.length - 1)
-
+let ArtIndex = getRandomInt(asciiArt.length - 1)
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
 function type() {
-    let chosenArt = asciiArt[listId]
+    let chosenArt = asciiArt[ArtIndex]
     if (i < chosenArt.length) {
         el.textContent += chosenArt[i];
         i++;
         setTimeout(type, 8) // in milliseconds
     }
-
+    else {
+        setTimeout(() => {
+            el.textContent = '';
+            ArtIndex = getRandomInt(asciiArt.length - 1);
+            i = 0;
+            type()
+        }, 5000);
+    }
 }
 
 type();
