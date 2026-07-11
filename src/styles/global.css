@@ -27,7 +27,7 @@ p {
 }
 
 .content {
-    padding: 0 2rem;
+    padding: 3rem 2rem;
 }
 
 .nav-links {
@@ -42,15 +42,13 @@ p {
     text-decoration: none;
 }
 
-.terminal-text {
-    color: var(--terminal-font-color);
-}
-
 .ascii-art {
     color: var(--accent);
 }
 
 .terminal-text {
+    color: var(--terminal-font-color);
+    line-height: 0;
     font-size: 1rem;
 }
 
