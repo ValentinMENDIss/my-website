@@ -43,7 +43,18 @@ p {
 }
 
 .ascii-art {
+    white-space: pre;
+    line-height: 1.2;
     color: var(--accent);
+}
+
+.ascii-art::after {
+  content: '█';
+  animation: blink 1.5s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 .terminal-text {
