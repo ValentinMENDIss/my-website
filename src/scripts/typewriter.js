@@ -93,13 +93,15 @@ function getRandomInt(max) {
 }
 
 function type() {
-    let chosenArt = asciiArt[ArtIndex]
-    if (i < chosenArt.length) {
-        el.textContent += chosenArt[i];
+    let currentAsciiArt = asciiArt[ArtIndex]
+    el.classList.remove('fadeOut');
+    if (i < currentAsciiArt.length) {
+        el.textContent += currentAsciiArt[i];
         i++;
         setTimeout(type, 8) // in milliseconds
     }
     else {
+        el.classList.add('fadeOut');
         setTimeout(() => {
             el.textContent = '';
             ArtIndex = getRandomInt(asciiArt.length - 1);

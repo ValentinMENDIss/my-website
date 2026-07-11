@@ -43,6 +43,7 @@ p {
 }
 
 .ascii-art {
+    opacity: 1;
     white-space: pre;
     line-height: 1.2;
     color: var(--accent);
@@ -55,6 +56,14 @@ p {
 
 @keyframes blink {
   50% { opacity: 0; }
+}
+
+.ascii-art.fadeOut {
+    animation: fadeOut 1.5s 3s forwards;
+}
+
+@keyframes fadeOut {
+    to { opacity: 0; }
 }
 
 .terminal-text {
