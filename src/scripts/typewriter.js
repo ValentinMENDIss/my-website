@@ -70,12 +70,12 @@ __       ____       _       _ __
 `,
 
 String.raw`
-    ____       _            __ 
-   / __ \_____(_)   _____  / /_
-  / /_/ / ___/ / | / / _ \/ __/
- / ____/ /  / /| |/ /  __/ /__ 
-/_/   /_/  /_/ |___/\___/\__( )
-                            |/ 
+__       ____       _            __ 
+\ \     / __ \_____(_)   _____  / /_
+ \ \   / /_/ / ___/ / | / / _ \/ __/
+ / /  / ____/ /  / /| |/ /  __/ /__ 
+/_/  /_/   /_/  /_/ |___/\___/\__( )
+                                 |/  
     __  ____      __
    /  |/  (_)____/ /
   / /|_/ / / ___/ / 
@@ -94,7 +94,7 @@ __            _____
 
 const el = document.getElementById('typewriter');
 let i = 0;
-let ArtIndex = getRandomInt(asciiArt.length - 1)
+let ArtIndex = getRandomInt(asciiArt.length)
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -112,7 +112,7 @@ function type() {
         el.classList.add('fadeOut');
         setTimeout(() => {
             el.textContent = '';
-            ArtIndex = getRandomInt(asciiArt.length - 1);
+            ArtIndex = getRandomInt(asciiArt.length);
             i = 0;
             type()
         }, 5000);
