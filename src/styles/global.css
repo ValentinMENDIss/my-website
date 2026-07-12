@@ -6,6 +6,7 @@
     --foreground: #FFFFFF;
     --accent: #E68C3D;
     --terminal-font-color: #283127;
+    --button-clicked: #E6E6E6;
 }
 
 body {
@@ -40,6 +41,25 @@ p {
     padding: 0 2rem;
     color: var(--foreground);
     text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+}
+
+.nav-links a:focus {
+    color: var(--button-clicked);
+}
+
+.nav-links a::before {
+    content: '● ';
+    color: var(--accent);
+    opacity: 0;
+}
+
+.nav-links a.active::before {
+    opacity: 1;
 }
 
 .ascii-art {
