@@ -27,6 +27,15 @@ p {
     line-height: 2rem;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline 1px;
+    text-decoration-color: var(--accent);
+}
+
 .content {
     padding: 3rem 3rem;
 }
@@ -40,12 +49,6 @@ p {
 .nav-links a {
     padding: 0 2rem;
     color: var(--foreground);
-    text-decoration: none;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--accent);
 }
 
 .nav-links a:focus {

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../../layouts/MarkdownPostLayout.astro
 title: "Hello, World!"
 pubDate: Jul 13, 2026
 description: "Sometimes, we shall all return to basics..."
