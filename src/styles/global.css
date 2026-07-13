@@ -44,6 +44,12 @@ a:hover {
     text-decoration-color: var(--accent);
 }
 
+img {
+    outline: 2px var(--background2);
+    outline-style: solid;
+    outline-offset: 2px;
+}
+
 .content {
     flex: 1;
     padding: 3rem 3rem;
