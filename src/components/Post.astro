@@ -1,35 +1,35 @@
 ---
 const { url, title, description, image } = Astro.props;
 ---
-<div class="projectContainer">
+<div class="postContainer">
     <img 
         src={image.url} 
         width="480" 
         height="270" 
         alt={image.alt} />
 
-    <div class="projectInfoContainer">
+    <div class="postInfoContainer">
         <b><a href={url}>{title}</a></b>
         <p>{description}</p>
     </div>
 </div>
 
 <style>
-    .projectContainer {
+    .postContainer {
         display: flex;
         padding: 1rem 0;
     }
 
-    .projectInfoContainer a {
+    .postInfoContainer a {
         font-size: 1.5rem;
         color: var(--accent);
     }
 
-    .projectInfoContainer p {
+    .postInfoContainer p {
         color: var(--foreground);
     }
 
-    .projectInfoContainer {
+    .postInfoContainer {
         padding: 0 2rem;
     }
 </style>

@@ -1,13 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
-import ProjectPost from "../components/ProjectPost.astro";
+import Post from "../components/Post.astro";
 const allPosts = Object.values(import.meta.glob('./posts/projects/*.md', {eager: true}));
 const pageTitle = "Projects";
 ---
 <BaseLayout pageTitle={pageTitle}>
     <h1>./Projects.md</h1>
     <ul>
-        {allPosts.map((post: any) => <ProjectPost url={post.url} title={post.frontmatter.title} description={post.frontmatter.description} image={post.frontmatter.image} />)}
+        {allPosts.map((post: any) => <Post url={post.url} title={post.frontmatter.title} description={post.frontmatter.description} image={post.frontmatter.image} />)}
     </ul>
 
 </BaseLayout>
