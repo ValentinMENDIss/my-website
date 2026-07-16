@@ -158,16 +158,20 @@ img {
 
     .nav-links {
         display: flex;
-        padding: 1rem;
+        background-color: var(--background2);
         width: 100%;
     }
 
     .nav-links a {
-        padding: 0 2rem;
         color: var(--foreground);
+        border-top: 0; 
     }
 
     .menuNavBar {
         display: none;
+    }
+
+    .content {
+        padding: 3rem 3rem;
     }
 }
