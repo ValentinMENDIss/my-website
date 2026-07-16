@@ -10,14 +10,22 @@ const { url, title, description, image } = Astro.props;
 
     <div class="postInfoContainer">
         <b><a href={url}>{title}</a></b>
-        <p>{description}</p>
+        <br><p>{description}</p>
     </div>
 </div>
 
 <style>
+    @media screen and (max-width: 635px) {
+        img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+
     .postContainer {
         display: flex;
-        padding: 1rem 0;
+        flex-direction: column;
     }
 
     .postInfoContainer a {
@@ -30,6 +38,26 @@ const { url, title, description, image } = Astro.props;
     }
 
     .postInfoContainer {
-        padding: 0 2rem;
+        padding-top: 1rem;
+        padding-bottom: 5rem;
     }
+
+    @media screen and (min-width: 636px) {
+        .postContainer {
+            display: flex;
+            padding: 1rem 0;
+        }
+
+        .postInfoContainer a {
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        .postInfoContainer p {
+            color: var(--foreground);
+        }
+
+        .postInfoContainer {
+            padding: 0 2rem;
+        }
 </style>

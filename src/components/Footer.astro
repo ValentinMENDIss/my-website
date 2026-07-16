@@ -19,7 +19,7 @@
     .footer-container {
         border-top: 1px solid var(--accent);
         background-color: var(--background);
-        padding: 0 3rem;
+        padding: 0rem;
     }
 
     footer {
@@ -30,10 +30,45 @@
     }
 
     footer a {
-        padding: 1rem;
+        padding: 0.25rem;
+        margin-right: 0.5rem;
     }
 
     footer p {
         color: var(--accent);
+        margin: 0.5rem;
+        padding: 0.25rem;
+    }
+
+    footer svg {
+        vertical-align: sub
+    }
+
+    @media screen and (min-width: 636px) {
+        .footer-container {
+            border-top: 1px solid var(--accent);
+            background-color: var(--background);
+            padding: 0 3rem;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer a {
+            padding: 1rem;
+        }
+
+        footer svg {
+            vertical-align: sub
+        }
+
+        footer p {
+            color: var(--accent);
+            margin: 0.5rem;
+            padding: 0.25rem;
+        }
     }
 </style>

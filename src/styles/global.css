@@ -80,7 +80,13 @@ img {
 
 .content {
     flex: 1;
-    padding: 3rem 3rem;
+    padding: 2rem 1rem;
+}
+
+.content p {
+    flex: 1;
+    padding: 0;
+    margin: 0;
 }
 
 .menuNavBar button, p {
