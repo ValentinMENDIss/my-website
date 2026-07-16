@@ -1,0 +1,24 @@
+---
+const currentPath = Astro.url.pathname;
+let currentPage;
+
+switch (currentPath) {
+    case "/about":
+        currentPage = "About";
+        break;
+    case "/projects":
+        currentPage = "Projects";
+        break;
+    case "/blogs":
+        currentPage = "Blogs";
+        break;
+    default:
+        currentPage = "Home";
+}
+---
+<div class="menuNavBar">
+    <button aria-expanded="false" aria-controls="main-menu" class="menu">
+        Menu
+    </button>
+    <p><span style="color:var(--accent)">●</span> {currentPage}</p>
+</div>

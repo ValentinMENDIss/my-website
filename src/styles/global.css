@@ -51,21 +51,18 @@ img {
     outline-offset: 2px;
 }
 
-.content {
-    flex: 1;
-    padding: 3rem 3rem;
-}
-
 .nav-links {
-    padding: 1rem;
-    width: 100%;
-    background-color: var(--background2);
+    display: none;
 }
 
 .nav-links a {
-    padding: 0 2rem;
+    display: block;
+    padding: 1rem 2rem;
+    background-color: var(--background2);
     color: var(--foreground);
+    border-top: 1px solid var(--accent); 
 }
+
 
 .nav-links a:focus {
     color: var(--button-clicked);
@@ -79,6 +76,32 @@ img {
 
 .nav-links a.active::before {
     opacity: 1;
+}
+
+.content {
+    flex: 1;
+    padding: 3rem 3rem;
+}
+
+.menuNavBar button, p {
+    display: inline-block;
+    color: var(--foreground);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.menuNavBar button {
+    background-color: var(--background2);
+    border: none;
+}
+
+.menuNavBar {
+    display: flex;
+    justify-content: space-between;
 }
 
 .ascii-art {
@@ -110,4 +133,41 @@ img {
     font-size: 1rem;
     line-height: 0;
     color: var(--terminal-font-color);
+}
+
+:has(.menu[aria-expanded="true"]) .nav-links {
+    display: unset;
+}
+
+:has(.menu[aria-expanded="true"]) .menuNavBar p {
+    display: none;
+}
+
+:has(.menu[aria-expanded="true"]) .menu {
+    width: 100%;
+    padding: 0.75rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 636px) {
+    :has(.menu[aria-expanded="true"]) .nav-links {
+        display: flex;
+    }   
+
+    .nav-links {
+        display: flex;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 0 2rem;
+        color: var(--foreground);
+    }
+
+    .menuNavBar {
+        display: none;
+    }
 }

@@ -2,7 +2,7 @@
 const currentPath = Astro.url.pathname;
 ---
 
-<div>
+<div id="main-menu" class="nav-links">
     <a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a>
     <a href="/about" class={currentPath === '/about' ? 'active' : ''}>About</a>
     <a href="/projects" class={currentPath === '/projects' ? 'active' : ''}>Projects</a>
