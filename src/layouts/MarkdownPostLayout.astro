@@ -15,12 +15,20 @@ const { frontmatter } = Astro.props;
 </BaseLayout>
 
 <style>
+    @media screen and (max-width: 635px) {
+        img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
     .postHeading {
         line-height: 1rem;
         padding: 0 0 1rem 0;
     }
 
     .postTitle {
+        line-height: 2.4rem;
         color: var(--accent);
     }
 
@@ -31,5 +39,25 @@ const { frontmatter } = Astro.props;
 
     .postInfoContainer {
         padding: 0 0 2rem 0;
+    }
+
+    @media screen and (min-width: 636px) {
+        .postHeading {
+            line-height: 1rem;
+            padding: 0 0 1rem 0;
+        }
+
+        .postTitle {
+            color: var(--accent);
+        }
+
+        .pubDate {
+            color: var(--sub-foreground);
+            line-height: 0.50rem;
+        }
+
+        .postInfoContainer {
+            padding: 0 0 2rem 0;
+        }
     }
 </style>
