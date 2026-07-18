@@ -21,11 +21,10 @@ const { url, title, description, image } = Astro.props;
             width: auto;
             height: auto;
         }
-    }
-
-    .postContainer {
-        display: flex;
-        flex-direction: column;
+        .postContainer {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .postInfoContainer a {
@@ -45,6 +44,7 @@ const { url, title, description, image } = Astro.props;
     @media screen and (min-width: 636px) {
         .postContainer {
             display: flex;
+            flex-direction: row;
             padding: 1rem 0;
         }
 
