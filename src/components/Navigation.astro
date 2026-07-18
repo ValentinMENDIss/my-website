@@ -3,8 +3,8 @@ const currentPath = Astro.url.pathname;
 ---
 
 <div id="main-menu" class="nav-links">
-    <a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a>
-    <a href="/about" class={currentPath === '/about' ? 'active' : ''}>About</a>
-    <a href="/projects" class={currentPath === '/projects' ? 'active' : ''}>Projects</a>
-    <a href="/blogs" class={currentPath === '/blogs' ? 'active' : ''}>Blogs</a>
+    <a href="/my-website" class={currentPath === 'my-website/' ? 'active' : ''}>Home</a>
+    <a href="my-website/about" class={currentPath === 'my-website/about' ? 'active' : ''}>About</a>
+    <a href="my-website/projects" class={currentPath === 'my-website/projects' ? 'active' : ''}>Projects</a>
+    <a href="my-website/blogs" class={currentPath === 'my-website/blogs' ? 'active' : ''}>Blogs</a>
 </div>
